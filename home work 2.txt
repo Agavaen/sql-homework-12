@@ -1,0 +1,41 @@
+# Домашнее задание №14 — Маршрутизация (To-Do App)
+
+## 1. Полный список маршрутов
+
+GET /tasks                — получить список задач  
+GET /tasks/:id           — получить одну задачу  
+POST /tasks              — создать задачу  
+PUT /tasks/:id           — обновить задачу  
+DELETE /tasks/:id        — удалить задачу  
+
+GET /tasks/completed     — получить выполненные задачи  
+GET /tasks/pending       — получить невыполненные задачи  
+POST /tasks/:id/complete — отметить задачу как выполненную  
+POST /tasks/:id/undo     — вернуть задачу в невыполненные  
+
+GET /users               — список пользователей  
+GET /users/:id           — пользователь по ID  
+POST /users              — создать пользователя  
+PUT /users/:id           — обновить пользователя  
+DELETE /users/:id        — удалить пользователя  
+
+
+## 2. Маршруты с регулярными выражениями (regex)
+
+GET /tasks/:id
+→ GET /tasks/(\d+)
+
+PUT /tasks/:id
+→ PUT /tasks/(\d+)
+
+DELETE /tasks/:id
+→ DELETE /tasks/(\d+)
+
+GET /users/:id
+→ GET /users/(\d+)
+
+PUT /users/:id
+→ PUT /users/(\d+)
+
+DELETE /users/:id
+→ DELETE /users/(\d+)
