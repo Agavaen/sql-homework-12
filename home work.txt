@@ -1,0 +1,10 @@
+/* ДЗ №12 — SQL выборка данных */
+
+USE testdb;
+
+-- 1. Выбор части колонок
+SELECT name, age FROM students;
+
+-- 2. Исключение значений (например город Алматы)
+SELECT * FROM students
+WHERE city != 'Алматы';
